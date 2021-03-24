@@ -3,6 +3,7 @@ html{
     color: rgba(255, 255, 255, .8);
     font-family: 'Roboto Condensed', sans-serif;
 }
+
 a {
     cursor: pointer;
     color: inherit;
@@ -34,6 +35,7 @@ header h1{
     width: 40%;
     z-index: 1;
 }
+
 #menu{
     width: 40%;
     display: flex;
@@ -53,12 +55,14 @@ header h1{
     left: 40%;
     z-index: 1;
 }
+
 #menu nav{
     display: flex;
     justify-content: space-around;
     position: relative;
     z-index: 1;
 }
+
 #menu nav a{
     padding-left: 2%;
     padding-right: 2%;
@@ -67,6 +71,7 @@ header h1{
 #menu-pochi-pixel{
     display: none;
 }
+
 .mini-menu{
     background-color: rgb(17, 24, 40);
     border-radius: 20px;
@@ -82,6 +87,7 @@ header h1{
     align-items: center;
     margin-bottom: 150px;
 }
+
 #descrizione p{
     border: 3px solid rgba(145, 146, 177, 0.8);
     text-align: center;
@@ -89,6 +95,7 @@ header h1{
     border-radius: 20px;
     padding: 3px;
 }
+
 #descrizione a{
     color:rgba(6, 9, 16, 0.8);
     text-align: center;
@@ -108,6 +115,7 @@ header h1{
     justify-content: flex-start;
     margin-bottom: 150px;
 }
+
 .riga-blocchi{
     display: flex;
     justify-content: center;
@@ -116,18 +124,23 @@ header h1{
 #fps{
     background-image: url(./Immagini/Fps.jpg);
 }
+
 #arcade{
     background-image: url(./Immagini/Arcade.jpg);
 }
+
 #negozio{
     background-image: url(./Immagini/Altro.jpg);
 }
+
 #corsa{
     background-image: url(./Immagini/Corsa.jpg);
 }
+
 #quiz{
     background-image: url(./Immagini/Quiz.jpg);
 }
+
 #blocchi a{
     width: 30%;
     height: 200px;
@@ -141,6 +154,7 @@ header h1{
     font-size: 0px;
     line-height: 40px;
 }
+
 #blocchi a h4{
     margin-left: 30px;
     margin-bottom: 10px;
@@ -148,6 +162,7 @@ header h1{
     z-index: 1;
     text-decoration: underline;
 }
+
 #blocchi p{
     margin-left: 30px;
     margin-right: 30px;
@@ -165,6 +180,7 @@ footer{
     justify-content: center;
     align-items: center;
 }
+
 footer p{
     color: white;
     text-align: center;
@@ -176,18 +192,19 @@ footer p{
     background-color: rgba(255, 255, 255, .1);
     color: inherit;
 }
+
 #login:hover{
     border-right: 0px;
 }
+
 nav a:hover{
     border-radius: 20px;
     background-color: rgba(255, 255, 255, .1);
 }
+
 #blocchi a:hover{
     background-image: none;
-    display: flex;
     justify-content: center;
-    position: relative;
     font-size: 1rem;
 }
 
@@ -198,6 +215,7 @@ nav a:hover{
     width: 100%;
     top: 0px;
 }
+
 .block-overlay{
     border-radius: 20px;
 }
@@ -209,8 +227,6 @@ nav a:hover{
 
     #blocchi a{
         height: 160px;
-    }
-    #blocchi a{
         line-height: 25px;
     }
 }
@@ -219,14 +235,17 @@ nav a:hover{
     html{
         font-size: 17px;
     }
+
     header h1{
         font-size: 80px;
         width: 100%;
     }
+
     header{
         height: 200px;
         margin-bottom: 50px;
     }
+
     #descrizione{
         margin-bottom: 100px;
     }
@@ -234,11 +253,13 @@ nav a:hover{
     #blocchi{
         width: 80%;
     }
+
     .riga-blocchi{
         flex-direction: column;
         justify-content: flex-start;
         margin-bottom: 0px;
     }
+
     #blocchi a{
         width: 100%;
         height: 120px;
@@ -248,6 +269,7 @@ nav a:hover{
     #menu{
         display: none;
     }
+    
     #menu-pochi-pixel{
         position: fixed;
         background-color: rgba(255, 255, 255, .5);
@@ -269,6 +291,5 @@ nav a:hover{
 @media (max-width: 350px){ 
     header h1{
         font-size: 50px;
-        width: 100%;
     }
 }
