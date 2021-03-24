@@ -265,3 +265,10 @@ nav a:hover{
         height: 60px;
     }
 }
+
+@media (max-width: 350px){ 
+    header h1{
+        font-size: 50px;
+        width: 100%;
+    }
+}
