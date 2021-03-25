@@ -17,7 +17,6 @@ body{
 
 header{
     height: 150px;
-    width: 100%;
     background-image: url(./Immagini/home.jpg);
     background-size: cover;
     background-position: top;
@@ -31,7 +30,6 @@ header{
 header h1{
     margin-bottom: 10px;
     margin-left: 10px;
-    color: rgba(255, 255, 255, .8);
     width: 40%;
     z-index: 1;
 }
@@ -81,7 +79,9 @@ header h1{
 }
 
 #descrizione{
-    width: 100%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,7 +91,6 @@ header h1{
 #descrizione p{
     border: 3px solid rgba(145, 146, 177, 0.8);
     text-align: center;
-    width: 80%;
     border-radius: 20px;
     padding: 3px;
 }
@@ -112,7 +111,6 @@ header h1{
     margin-right: auto;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     margin-bottom: 150px;
 }
 
@@ -163,7 +161,7 @@ header h1{
     text-decoration: underline;
 }
 
-#blocchi p{
+#blocchi a p{
     margin-left: 30px;
     margin-right: 30px;
     margin-top: 0px;
@@ -171,7 +169,6 @@ header h1{
 
 footer{
     height: 50px;
-    width: 100%;
     background-image: url(./Immagini/Home.jpg);
     background-size: cover;
     background-position: bottom;
@@ -182,19 +179,14 @@ footer{
 }
 
 footer p{
-    color: white;
-    text-align: center;
     font-size: 17px;
+    z-index: 1;
 }
 
 #descrizione a:hover, #login:hover{
     border-color: rgba(255, 255, 255, .8);
     background-color: rgba(255, 255, 255, .1);
     color: inherit;
-}
-
-#login:hover{
-    border-right: 0px;
 }
 
 nav a:hover{
@@ -226,7 +218,7 @@ nav a:hover{
     }
 
     #blocchi a{
-        height: 160px;
+        height: 140px;
         line-height: 25px;
     }
 }
@@ -257,7 +249,6 @@ nav a:hover{
     .riga-blocchi{
         flex-direction: column;
         justify-content: flex-start;
-        margin-bottom: 0px;
     }
 
     #blocchi a{
@@ -289,6 +280,10 @@ nav a:hover{
 }
 
 @media (max-width: 350px){ 
+    html{
+        font-size: 14px;
+    }
+
     header h1{
         font-size: 50px;
     }
