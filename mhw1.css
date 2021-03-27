@@ -16,8 +16,8 @@ body{
 }
 
 header{
-    height: 150px;
-    background-image: url(./Immagini/home.jpg);
+    height: 200px;
+    background-image: url(home.jpg);
     background-size: cover;
     background-position: top;
     display: flex;
@@ -29,9 +29,11 @@ header{
 
 header h1{
     margin-bottom: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
     width: 40%;
     z-index: 1;
+    font-size: 3rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 #menu{
@@ -42,7 +44,7 @@ header h1{
 
 #login{
     background-color: rgba(255, 255, 255, .8);
-    border: 3px solid rgba(255, 255, 255, .1);
+    border: 3px solid rgba(255, 255, 255, 0);
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     width: 60%;
@@ -50,14 +52,14 @@ header h1{
     color:rgba(6, 9, 16, 0.8);
     font-weight: bold;
     position: relative;
-    left: 40%;
+    left: calc(40% - 6px);
     z-index: 1;
+    font-style: italic;
 }
 
 #menu nav{
     display: flex;
     justify-content: space-around;
-    position: relative;
     z-index: 1;
 }
 
@@ -90,9 +92,11 @@ header h1{
 
 #descrizione p{
     border: 3px solid rgba(145, 146, 177, 0.8);
+    font-size: 1.2rem;
     text-align: center;
     border-radius: 20px;
     padding: 3px;
+    margin-bottom: 20px;
 }
 
 #descrizione a{
@@ -100,17 +104,16 @@ header h1{
     text-align: center;
     border-radius: 20px;
     background-color: rgba(145, 146, 177, 0.8);
-    border: 3px solid rgba(255, 255, 255, .1);
+    border: 3px solid rgba(255, 255, 255, 0);
     padding-left: 6%;
     padding-right: 6%;
+    font-weight: bold;
 }
 
 #blocchi{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    flex-direction: column;
     margin-bottom: 150px;
 }
 
@@ -120,23 +123,23 @@ header h1{
 }
 
 #fps{
-    background-image: url(./Immagini/Fps.jpg);
+    background-image: url(Fps.jpg);
 }
 
 #arcade{
-    background-image: url(./Immagini/Arcade.jpg);
+    background-image: url(Arcade.jpg);
 }
 
 #negozio{
-    background-image: url(./Immagini/Altro.jpg);
+    background-image: url(Negozio.jpg);
 }
 
 #corsa{
-    background-image: url(./Immagini/Corsa.jpg);
+    background-image: url(Corsa.jpg);
 }
 
 #quiz{
-    background-image: url(./Immagini/Quiz.jpg);
+    background-image: url(Quiz.jpg);
 }
 
 #blocchi a{
@@ -169,7 +172,7 @@ header h1{
 
 footer{
     height: 50px;
-    background-image: url(./Immagini/Home.jpg);
+    background-image: url(Home.jpg);
     background-size: cover;
     background-position: bottom;
     position: relative;
@@ -181,6 +184,7 @@ footer{
 footer p{
     font-size: 17px;
     z-index: 1;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 #descrizione a:hover, #login:hover{
@@ -210,6 +214,7 @@ nav a:hover{
 
 .block-overlay{
     border-radius: 20px;
+    background-color:rgba(0, 0, 0, 0.4);
 }
 
 @media (max-width: 1650px){ 
@@ -217,9 +222,17 @@ nav a:hover{
         font-size: 20px;
     }
 
+    header{
+        height: 150px;
+    }
+
     #blocchi a{
         height: 140px;
         line-height: 25px;
+    }
+
+    footer{
+        height: 40px;
     }
 }
 
